@@ -4,12 +4,9 @@ SHDIR  ?= $(PREFIX)/share
 BINDIR ?= $(PREFIX)/bin
 LIBDIR ?= $(PREFIX)/lib
 
-.PHONY: build install completion
+.PHONY: build install
 
-build: kb-light completion
-
-completion:
-	@echo Implement tab completion
+build: 
 
 install: 
 	@install -Dm755 kb-light   -t $(DESTDIR)$(BINDIR)
