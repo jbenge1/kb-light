@@ -9,4 +9,4 @@ LIBDIR ?= $(PREFIX)/lib
 build: 
 
 install: 
-	@install -Dm755 kb-light   -t $(DESTDIR)$(BINDIR)
+	@install -Dm755 $(PROGRNM) -t $(DESTDIR)$(BINDIR)
